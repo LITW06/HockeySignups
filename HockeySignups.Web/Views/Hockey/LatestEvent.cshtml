@@ -1,0 +1,35 @@
+﻿@using HockeySignups.Data
+@model HockeySignups.Web.Models.EventSignupViewModel
+<div class="row">
+    <div class="col-md-8 col-md-offset-2 well">
+        @if (Model.EventStatus == EventStatus.Open)
+        {
+            <h3>Signup for game on @Model.Event.Date.ToLongDateString()</h3>
+            <form method="POST" action="/hockey/eventsignup">
+                <input type="hidden" name="eventId" value="@Model.Event.Id"/>
+                <div class="form-group">
+                    <label>First Name:</label>
+                    <input type="text" class="form-control" name="firstName" value="@Model.Signup.FirstName">
+                </div>
+                <div class="form-group">
+                    <label>Last Name:</label>
+                    <input type="text" class="form-control" name="lastName" value="@Model.Signup.LastName">
+                </div>
+                <div class="form-group">
+                    <label>Email address:</label>
+                    <input type="email" class="form-control" name="email" value="@Model.Signup.Email">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+
+            </form>
+        }
+        else if (Model.EventStatus == EventStatus.InThePast)
+        {
+            <h1>Sorry, the form for this week has not been posted yet :(</h1>
+        }
+        else
+        {
+            <h1>Sorry, this weeks game is full, please try again next week. Or don't. We don't really care about you.</h1>
+        }
+    </div>
+</div>

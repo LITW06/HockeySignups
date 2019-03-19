@@ -1,0 +1,31 @@
+﻿<div class="alert alert-danger" style="display: none;" id="error-alert">
+    <a href="#" class="close" id="dismiss-alert" aria-label="close">&times;</a>
+    <span id="error-message"></span>
+</div>
+
+<div class="row">
+    <div class="col-md-8 col-md-offset-2">
+        <div class="well">
+            <form method="POST" action="/hockey/notificationsignup">
+                <div class="form-group">
+                    <label>First Name:</label>
+                    <input type="text" class="form-control" name="firstName" id="firstName">
+                </div>
+                <div class="form-group">
+                    <label>Last Name:</label>
+                    <input type="text" class="form-control" name="lastName" id="lastName">
+                </div>
+                <div class="form-group">
+                    <label>Email address:</label>
+                    <input type="text" class="form-control" name="email" id="email">
+                </div>
+                <button type="submit" id="submit-button" disabled class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section scripts 
+{
+    <script src="/Scripts/site-scripts/notification-signups.js"></script>
+}

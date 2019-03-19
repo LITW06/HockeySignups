@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2037
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HockeySignups.Web", "HockeySignups.Web\HockeySignups.Web.csproj", "{50D0E55E-C459-42F1-877F-53320902022E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HockeySignups.Data", "HockeySignups.Data\HockeySignups.Data.csproj", "{ACE2E1BD-BD34-47F0-9B8D-BA09FF4B025B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{50D0E55E-C459-42F1-877F-53320902022E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50D0E55E-C459-42F1-877F-53320902022E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50D0E55E-C459-42F1-877F-53320902022E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50D0E55E-C459-42F1-877F-53320902022E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACE2E1BD-BD34-47F0-9B8D-BA09FF4B025B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACE2E1BD-BD34-47F0-9B8D-BA09FF4B025B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACE2E1BD-BD34-47F0-9B8D-BA09FF4B025B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACE2E1BD-BD34-47F0-9B8D-BA09FF4B025B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CAB1BDED-1CCB-47A2-BE9B-576F24786621}
+	EndGlobalSection
+EndGlobal

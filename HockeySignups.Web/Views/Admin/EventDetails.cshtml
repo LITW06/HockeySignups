@@ -1,0 +1,24 @@
+﻿@model HockeySignups.Web.Models.EventDetailsViewModel
+
+<div class="row">
+    <div class="col-md-8 col-md-offset-2">
+        <h3>Signups for @Model.Event.Date.ToShortDateString()</h3>
+        <table class="table table-striped table-bordered table-hover">
+            <tr>
+                <th>First</th>
+                <th>Last</th>
+                <th>Email</th>
+            </tr>
+            @foreach (var e in Model.Signups)
+            {
+                <tr>
+                    <td>@e.FirstName</td>
+                    <td>@e.LastName</td>
+                    <td>
+                        @e.Email
+                    </td>
+                </tr>
+            }
+        </table>
+    </div>
+</div>

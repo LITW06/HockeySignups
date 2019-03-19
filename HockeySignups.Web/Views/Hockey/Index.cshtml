@@ -1,0 +1,33 @@
+﻿@model HockeySignups.Web.Models.HomePageViewModel
+@if (!String.IsNullOrEmpty(Model.Message))
+{
+    <div class="alert alert-success">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        @Model.Message
+    </div>
+}
+else if (!String.IsNullOrEmpty(Model.ErrorMesage))
+{
+    <div class="alert alert-danger">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        @Model.ErrorMesage
+    </div>
+}
+
+<div class="jumbotron">
+    <div class="container">
+        <h2>Welcome Motsei Shabbos Hockey Dudes!!!</h2>
+        <p>
+            This page will help you get signed up to the weekly hockey game, please make sure to let the admins
+            know ahead of time if you can't make it. Most of all be safe and have fun!!!
+        </p>
+        <div class="row">
+            <div class="col-md-6">
+                <a href="/hockey/notificationsignup" class="btn btn-primary btn-lg">Weekly Notification Signup</a>
+            </div>
+            <div class="col-md-5">
+                <a href="/hockey/latestevent" class="btn btn-primary btn-lg">Signup for this weeks game</a>
+            </div>
+        </div>
+    </div>
+</div>
